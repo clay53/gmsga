@@ -9,7 +9,7 @@
 
 <a href="{to}" use:link>
     <div style="color: {color}; background-color: {bg}">
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <p>{date}</p>
     </div>
 </a>
@@ -29,7 +29,8 @@
         border-radius: 0.5em;
     }
 
-    div h1 {
+    div h2 {
+        font-size: 2em;
         margin: 0.5em 0 0.2em 0;
         padding: 0.1em 0 0 0;
     }

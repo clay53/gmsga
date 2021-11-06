@@ -18,8 +18,8 @@
 			<NavItem to="/events">Events</NavItem>
 		</nav>
 		<div id="page">
-			<Route path="/" component="{Home}" />
-			<Route path="/events" component="{Events}" />
+			<Route path="/"><Home/></Route>
+			<Route path="/events"><Events/></Route>
 			<Route path="/powder-puff" let:params>
 				<PowderPuff year="{params.year}"/>
 			</Route>
@@ -29,7 +29,7 @@
 			<Route path="/mini-thon" let:params>
 				<MiniThon year="{params.year}"/>
 			</Route>
-			<Route component="{NotFound}" />
+			<Route><NotFound/></Route>
 		</div>
 		<footer>
 			<hr/>
