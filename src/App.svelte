@@ -4,9 +4,7 @@
 	import NotFound from "./routes/NotFound.svelte";
 	import Home from "./routes/Home.svelte";
 	import Events from "./routes/Events.svelte";
-	import PowderPuff from "./routes/PowderPuff.svelte";
-	import WreathsAcrossAmerica from "./routes/WreathsAcrossAmerica.svelte";
-	import MiniThon from "./routes/MiniThon.svelte";
+	import SpiritDays from "./routes/SpiritDays.svelte";
 
 	export let url = "";
 </script>
@@ -20,14 +18,8 @@
 		<div id="page">
 			<Route path="/"><Home/></Route>
 			<Route path="/events"><Events/></Route>
-			<Route path="/powder-puff" let:params>
-				<PowderPuff year="{params.year}"/>
-			</Route>
-			<Route path="/wreaths-across-america" let:params>
-				<WreathsAcrossAmerica year="{params.year}"/>
-			</Route>
-			<Route path="/mini-thon" let:params>
-				<MiniThon year="{params.year}"/>
+			<Route path="/spiritdays" let:params>
+				<SpiritDays monthAndYear="{params.monthAndYear}"/>
 			</Route>
 			<Route><NotFound/></Route>
 		</div>
